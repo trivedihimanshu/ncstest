@@ -1,0 +1,34 @@
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/appsettings.Development.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/appsettings.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Connected Services/ServiceReference1/ConnectedService.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Properties/launchSettings.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.deps.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.runtimeconfig.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.runtimeconfig.dev.json
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.dll
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.pdb
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Models.dll
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Models.pdb
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.csprojAssemblyReference.cache
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.AssemblyInfoInputs.cache
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.AssemblyInfo.cs
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.csproj.CopyComplete
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.dll
+/Users/solaadio/CoventrySample/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.pdb
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/appsettings.Development.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/appsettings.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Connected Services/ServiceReference1/ConnectedService.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Properties/launchSettings.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.deps.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.runtimeconfig.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.runtimeconfig.dev.json
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.dll
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/GetAppInfo.pdb
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Models.dll
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/bin/Debug/netcoreapp2.0/Models.pdb
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.csprojAssemblyReference.cache
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.AssemblyInfoInputs.cache
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.AssemblyInfo.cs
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.csproj.CopyComplete
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.dll
+/Users/solaadio/ncstest/src/GetAppInfo/GetAppInfo/obj/Debug/netcoreapp2.0/GetAppInfo.pdb
