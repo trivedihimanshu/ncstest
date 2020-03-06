@@ -1,14 +1,5 @@
-# ASP.NET Core (.NET Framework)
-# Build and test ASP.NET Core projects targeting the full .NET Framework.
-# Add steps that publish symbols, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
-trigger:
-- master
-
 pool:
   name: Azure Pipelines
-
 steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
@@ -18,5 +9,3 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: ARM-drop'
-  inputs:
-    ArtifactName: 'ARM-drop'
