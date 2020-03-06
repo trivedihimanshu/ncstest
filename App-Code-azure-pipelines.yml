@@ -1,17 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+variables:
+  Parameters.solution: '**\*.sln'
+  BuildPlatform: 'any cpu'
+  BuildConfiguration: 'release'
+
+trigger:
+- master
+
 pool:
-  name: Azure Pipelines
+  vmImage: 'windows-latest'
   demands:
   - msbuild
   - visualstudio
   - vstest
-
-#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references the ‘BuildPlatform’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
-#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
-#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
-#Your build pipeline references the ‘BuildPlatform’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
-#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
 
 steps:
 - task: NuGetToolInstaller@0
@@ -23,15 +28,6 @@ steps:
   displayName: 'NuGet restore'
   inputs:
     restoreSolution: '$(Parameters.solution)'
-
-- task: qetza.replacetokens.replacetokens-task.replacetokens@3
-  displayName: 'Replace tokens in **/*.json'
-  inputs:
-    rootDirectory: src/GetAppInfo/GetAppInfo
-    targetFiles: '**/*.json'
-    tokenPrefix: '__'
-    tokenSuffix: '__'
-  enabled: false
 
 - task: VSBuild@1
   displayName: 'Build solution **\*.sln'
@@ -46,7 +42,6 @@ steps:
   inputs:
     rootFolderOrFile: '$(Agent.TempDirectory)\WebAppContent'
     includeRootFolder: false
-  enabled: false
 
 - task: VSTest@2
   displayName: 'VsTest - testAssemblies'
@@ -64,15 +59,9 @@ steps:
     PublishSymbols: false
   continueOnError: true
 
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
-  inputs:
-    SourceFolder: '$(Agent.TempDirectory)\WebAppContent'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
+  displayName: 'Publish Artifact: Code-drop'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'Code-drop'
   condition: succeededOrFailed()
-
